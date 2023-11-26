@@ -6,6 +6,7 @@ import { MatchesComponent } from './matches/matches.component';
 const routes: Routes = [
   { path: ':country', component: StandingsComponent },
   { path: ':country/:teamId', component: MatchesComponent },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
