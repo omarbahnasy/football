@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60vw
+}
+
+button {
+  width: 15%;
+  margin: auto;
+}

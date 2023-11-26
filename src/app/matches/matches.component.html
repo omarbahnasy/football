@@ -1,0 +1,36 @@
+<div class="container">
+  <table class="table table-striped table-hover table-primary text-center">
+    <tbody>
+      <tr *ngFor="let fixture of fixtures">
+        <td style="width: 5%">
+          <img
+            [src]="fixture.teams.home.logo"
+            [alt]="'The logo of ' + fixture.teams.home.name"
+            class="me-2"
+            style="width: 20px"
+          />
+        </td>
+        <td style="width: 40%">{{ fixture.teams.home.name }}</td>
+        <td>{{ fixture.goals.home }}</td>
+        <td>-</td>
+        <td>{{ fixture.goals.away }}</td>
+        <td style="width: 40%">{{ fixture.teams.away.name }}</td>
+        <td style="width: 5%">
+          <img
+            [src]="fixture.teams.away.logo"
+            [alt]="'The logo of ' + fixture.teams.away.name"
+            class="me-2"
+            style="width: 20px"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button
+    class="btn btn-primary"
+    type="button button-primary"
+    (click)="onClickBack()"
+  >
+    Back
+  </button>
+</div>
